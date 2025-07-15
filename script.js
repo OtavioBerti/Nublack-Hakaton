@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     botoesAba.forEach(botao => {
         botao.addEventListener('click', function() {
-            const idAba = this.getAttribute('data-aba');
+            const idAba = this.getAttribute('data-aba'); 
             botoesAba.forEach(b => b.classList.remove('ativo'));
             conteudosAba.forEach(conteudo => conteudo.classList.remove('ativo'));
             this.classList.add('ativo');
